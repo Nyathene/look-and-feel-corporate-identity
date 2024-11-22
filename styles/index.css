@@ -1,0 +1,157 @@
+:root{
+    
+  --bg-primary: #111111;
+  --text-primary: #f5f5f5;
+  --text-secondary: #a6a6a6;
+
+  /* Button Colors */
+  --btn-default: #f5f5f5;
+  --btn-rouwtaak-1: #64aac7;
+  --btn-rouwtaak-2: #984a4a;
+  --btn-rouwtaak-3: #6e9158;
+  --btn-rouwtaak-4: #7c6097;
+
+  /* Pill button*/
+  --btn-border: 1px solid #f5f5f5;
+  --pill-btn-border-radius: 5rem;
+  --pill-btn-padding: 0.5rem;
+  --pill-btn-width: 5rem;
+
+  /* Typography Settings */
+  --ff-calvino: "Calvino Grande", serif;
+  --ff-figtree: "Figtree", sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold-normal: 700;
+  --fw-bold-heading: 800;
+
+  /* Inactive/Completed Colors */
+  --inactive-color: #4d4d4d;
+  --completed-color: #f5f5f5;
+
+  --completed-rouwtaak-1: #64aac7;
+  --completed-rouwtaak-2: #984a4a;
+  --completed-rouwtaak-3: #6e9158;
+  --completed-rouwtaak-4: #7c6097;
+}
+body{
+    padding: 1em;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 38vh max-content max-content 1fr;
+    grid-template-areas:
+      "blank"
+      "header"
+      "text"
+      "buttons";
+      @media (min-width:600px) {
+        justify-content: center;
+      }
+
+}
+
+
+progress{
+    grid-area: blank;
+    height:12em;
+    @media (min-width:600px) {
+      width: 70vw;
+    }
+}
+
+.text{
+    grid-area: text;
+    width: 30em;
+    place-self: auto start;
+}
+
+/* De plaatjes/logos en hun posities */
+.logo {
+    position: absolute;
+    left: -7.5em;
+    top: 21.21%;
+    z-index: -1;  
+    @media (min-width:600px) {
+        left: 60em;
+    }
+  }
+
+.logo img {
+    width: 18em;
+    @media (min-width:600px) {
+        width: 30em;
+    }
+  }
+  
+.blur img{
+    width: 40em;
+    opacity: 50%;
+    @media (min-width:600px) {
+        width: 80em;
+    }
+  }
+  
+/* De blurs en hun posities */
+
+  .rechtsboven{
+    position: absolute;
+    right: -20em;
+    top: -20em;
+    z-index: -1;  
+  }
+
+  .rechtsmidden{
+    position: absolute;
+    right: -20em;
+    z-index: -1;  
+  }
+
+  .rechtsonder{
+    position: absolute;
+    right: -17em;
+    bottom: -18em;
+    z-index: -1;
+    @media (min-width:600px) {
+        right: -34em;
+        bottom: -36em;
+    }
+  }
+
+  .linksboven{
+    position: absolute;
+    left: -20em;
+    top: -20em;
+    z-index: -1;  
+  }
+
+  .linksmidden{
+    position: absolute;
+    left: -20em;
+    z-index: -1;  
+  }
+
+  .linksonder{
+    position: absolute;
+    left: -17em;
+    bottom: -18em;
+    z-index: -1;  
+  }
+
+  .transparent img{
+    opacity: 25%;;
+  }
+
+  .mobile{
+    @media (min-width:600px) {
+        display: none;
+      }
+  }
+
+  .desktop{
+  @media (max-width:600px) {
+    display: none;
+  }
+  }
+  
