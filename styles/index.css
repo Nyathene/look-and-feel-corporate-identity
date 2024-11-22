@@ -52,7 +52,9 @@ body{
 
 }
 
-
+.header{
+    grid-area: header;
+}
 progress{
     grid-area: blank;
     height:12em;
