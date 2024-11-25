@@ -44,10 +44,48 @@ progress::-webkit-progress-value {
   color: var(--bg-primary);}
 
 
-.text{
+.inhoud{
     grid-area: text;
     width: 30em;
     place-self: auto start;
+    padding: 2em;
+}
+
+.container{
+  position:static;
+  display:flex;
+}
+
+article{
+  min-width: 20vw;
+  padding: 2em;
+}
+
+.groot{
+  font-size: 2rem;
+}
+
+.knop{
+  grid-area: buttons;
+  position: relative;
+  top:10em;
+}
+
+.arrow{
+  height:3em;
+  align-content: center;
+}
+
+.⬅{
+  position:absolute;
+  bottom:5em;
+  left:5em;
+}
+
+.➡{
+  position:absolute;
+  bottom:5em;
+  right:5em;
 }
 
 /* De plaatjes/logos en hun posities */
