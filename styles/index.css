@@ -6,10 +6,10 @@ body{
     padding: 1em;
     overflow: hidden;
     display: grid;
-    grid-template-rows: 38vh max-content max-content 1fr;
+    grid-template-rows: max-content max-content max-content 1fr;
     grid-template-areas:
-      "blank"
       "header"
+      "bar"
       "text"
       "buttons";
       @media (min-width:600px) {
@@ -21,13 +21,28 @@ body{
 .header{
     grid-area: header;
 }
+
+
+/*Progress Bar */
 progress{
-    grid-area: blank;
-    height:12em;
-    @media (min-width:600px) {
-      width: 70vw;
-    }
+  grid-area: bar;
+  background-color: var(--bg-primary);
+  color: var(--bg-primary);
+  height:1em;
+  @media (min-width:600px) {
+    width: 70vw;
+  }
 }
+/* Mozilla progress bar */
+progress::-moz-progress-bar { 
+  background: var(--text-primary);
+  color: var(--bg-primary);}
+/* Safari & Edge progress bar */
+progress::-webkit-progress-value { 
+  background-color: var(--bg-primary);
+  background: var(--text-primary);
+  color: var(--bg-primary);}
+
 
 .text{
     grid-area: text;
