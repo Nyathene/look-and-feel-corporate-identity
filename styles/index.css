@@ -6,6 +6,7 @@ body{
     padding: 1em;
     overflow: hidden;
     display: grid;
+    /* Gestalt Principe:Law Of Proximity */
     grid-template-rows: 5em max-content max-content 1fr;
     grid-template-areas:
       "header"
@@ -26,7 +27,7 @@ body{
   display:none;
 }
 
-/*Progress Bar */
+/*Progress Bar. Deze functioneert ook als een divider; Gestalt Principe: Law Of Common Region*/
 progress{
   grid-area: bar;
   background-color: var(--inactive-color);
