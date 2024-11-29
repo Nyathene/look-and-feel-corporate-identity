@@ -65,7 +65,7 @@ article{
 }
 
 .groot{
-  font-size: 2rem;
+  font-size: --font-large;
 }
 
 .knop{
