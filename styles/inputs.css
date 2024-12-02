@@ -1,0 +1,31 @@
+html{
+    background-color: royalblue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+label{
+    
+    background-color: white;
+    color: black;
+
+}
+
+
+input:placeholder-shown {
+    background-color: pink;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+[type="time"] input:default{
+    background-color: red;
+    border: 2px solid pink;
+    border-radius: 5px;
+}
+
+input:out-of-range{
+   background-color: black;
+   color: white;
+}
